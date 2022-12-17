@@ -8,7 +8,7 @@ from src.NameGuesser import Trie
 class TestTrie(TestCase):
     def test_search_pattern(self):
         # Read name data from CSV file
-        name_dataset = read_csv('../Indian_Names.csv')
+        name_dataset = read_csv('../resources/Indian_Names.csv')
         # Drop empty value records
         name_dataset.dropna(inplace=True)
         # Store all the names in a set to avoid duplicates if any
